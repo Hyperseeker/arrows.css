@@ -43,11 +43,11 @@ Given how it turned out to be fairly self-sufficient, I decided to release it.
 * positioning is in the inline axis only  
   (left/right in most writing systems, so before/after element)
   
-[ ] padding is imperfect for text  
+- [ ] padding is imperfect for text  
   prevents about one character's worth of selection
-[ ] no default location  
+- [ ] no default location  
   have to declare either `.before` or `.after` explicitly
-[ ] all arrows use `:before` pseudo-element, regardless of positioning  
+- [ ] all arrows use `:before` pseudo-element, regardless of positioning  
   can declare one arrow per element only
 
 # License
