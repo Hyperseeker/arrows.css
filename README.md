@@ -20,6 +20,20 @@ As you would a regular CSS library.
 
 If you don't know how that works, [this brief how-to](https://www.w3schools.com/css/css_howto.asp) may help.
 
+Then, add the following classes to the element:
+
+*for each type, at least one value is required*
+
+* `.arrow`
+* `.before` or `.after` (positioning relative to the element)
+* `.up`, `.down`, `.left`, `.right`, or any combination of either axis
+
+## Examples
+
+* `<a class="arrow after right" href="https://example.com">Visit my wonderful site</a>`
+* `the <span class="arrow before up">examples above</span>`
+* `<p class="arrow after down right">To exit, press the red button in the lower right corner</p>`
+
 # Pros
 
 * Unicode-based  
