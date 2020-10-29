@@ -1,0 +1,163 @@
+.arrow {
+	
+	position: relative;
+	
+	&::before {
+
+		--translate-x:              0;
+		--translate-y:              0;
+		
+		--offset-arrow-reduction:   0.375;
+		
+		--offset-arrow-pos:         2ch;
+		--offset-arrow-neg:         calc(var(--offset-arrow-pos) * -1);
+		
+		--offset-arrow-pos-reduced: calc(var(--offset-arrow-pos) * var(--offset-arrow-reduction));
+		--offset-arrow-neg-reduced: calc(var(--offset-arrow-neg) * var(--offset-arrow-reduction));
+	
+		position:   absolute;
+	
+		transform:  translate(var(--translate-x), var(--translate-y));
+	
+		transition: 0.175s transform;
+		
+	}
+	
+	&.static::before { transform: none; }
+	
+	&.up {
+		
+		&::before { content: "\2191"; }
+		
+		&:hover,
+		&:focus {
+			
+			&::before {
+				
+				--translate-y: var(--offset-arrow-neg-reduced);
+				
+				margin-bottom:  var(--offset-arrow-neg-reduced);
+				padding-bottom: var(--offset-arrow-pos-reduced);
+			
+			} 
+			
+		}
+		
+		&.left {
+			
+			&::before { content: "\2196"; }
+			
+		}
+		
+		&.right {
+			
+			&::before { content: "\2197"; }
+			
+		}
+	
+	}
+	
+	&.down {
+		
+		&::before { content: "\2193"; }
+		
+		&:hover,
+		&:focus {
+			
+			&::before {
+				
+				--translate-y: var(--offset-arrow-pos-reduced);
+				
+				margin-top:  var(--offset-arrow-neg-reduced);
+				padding-top: var(--offset-arrow-pos-reduced);
+			
+			}
+			
+		}		
+		
+		&.left {
+			
+			&::before { content: "\2199"; }
+			
+		}
+		
+		&.right {
+			
+			&::before { content: "\2198"; }
+			
+		}
+	
+	}
+	
+	&.left {
+		
+		&::before { content: "\2190"; }
+		
+		&:hover,
+		&:focus {
+			
+			&::before { --translate-x: var(--offset-arrow-neg-reduced); }
+			
+		}
+		
+	}
+	
+	&.right {
+		
+		&::before { content: "\2192"; }
+		
+		&:hover,
+		&:focus {
+			
+			&::before { --translate-x: var(--offset-arrow-pos-reduced); }
+			
+		}
+		
+	}
+	
+	&.after {
+		
+		&::before {
+	
+			right:         var(--offset-arrow-neg);
+		
+			padding-left:  var(--offset-arrow-pos);
+		
+		}
+		
+	}
+	
+	&.before {
+		
+		&::before {
+	
+			left:          var(--offset-arrow-neg);
+		
+			padding-right: var(--offset-arrow-pos);
+		
+		}
+		
+	}
+	
+	/*  >>>> Diagonal Arrows Animation  */
+	/*     * reduce movement distance for diagonal arrows */
+	/*     * vertical + horizontal movement compound and create an effect of stronger animation */
+	
+	&.up,
+	&.down {
+		
+		&.left,
+		&.right {
+			
+			&:hover,
+			&:focus {
+				
+				&::before { --offset-arrow-reduction: 0.25; }
+				
+			}
+			
+		}
+		
+	}
+
+}
