@@ -56,6 +56,12 @@ If you don't know how that works, [this brief how-to](https://www.w3schools.com/
 - [ ] all arrows use `:before` pseudo-element, regardless of positioning  
   can declare one arrow per element only
 
+# Notes
+
+* Unicode ranges:
+  - orthogonal arrows: 2190-2193
+  - diagonal arrows: 2196-2199
+
 # License
 
 MIT
