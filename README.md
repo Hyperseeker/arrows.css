@@ -14,6 +14,12 @@ The site's design system is simple and local, so I was able to implement a plain
 
 Given how it turned out to be fairly self-sufficient, I decided to release it.
 
+# Usage
+
+As you would a regular CSS library.
+
+If you don't know how that works, [this brief how-to](https://www.w3schools.com/css/css_howto.asp) may help.
+
 # Pros
 
 * Unicode-based  
