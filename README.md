@@ -42,6 +42,7 @@ Given how it turned out to be fairly self-sufficient, I decided to release it.
   (set by `.arrow`)
 * positioning is in the inline axis only  
   (left/right in most writing systems, so before/after element)
+  
 [ ] padding is imperfect for text  
   prevents about one character's worth of selection
 [ ] no default location  
