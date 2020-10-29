@@ -44,7 +44,7 @@ If you don't know how that works, [this brief how-to](https://www.w3schools.com/
   *site uses* [Inter](https://rsms.me/inter/)
 * implies using no other class-based CSS framework  
   *most likely to conflict if used*
-* the containing element must be `position: relative`
+* the containing element must be `position: relative`  
   *set by* `.arrow`
 * positioning is in the inline axis only  
   *left/right in most writing systems, so before/after element*
