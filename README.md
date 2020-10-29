@@ -63,6 +63,8 @@ Then, add the following classes to the element:
 * positioning is in the inline axis only  
   *left/right in most writing systems, so before/after element*
   
+## To Do
+  
 - [ ] padding is imperfect for text  
   *prevents about one character's worth of selection*
 - [ ] no default location  
