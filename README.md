@@ -37,9 +37,9 @@ Then, add the following classes to the element:
 # Pros
 
 * Unicode-based  
-  *no SVG or JS overhead*
+  *no SVG, image, or JS overhead*
 * works for eight directions  
-  *NESW + NE / NW / SE / SW*
+  *North + East + South + West + NE / NW / SE / SW*
 * can be positioned before or after the element
 * animated in direction of the arrow on `:hover` and `:focus` by default
 * diagonal arrows animation movement is adjusted  
@@ -75,8 +75,8 @@ Then, add the following classes to the element:
 # Notes
 
 * Unicode ranges:
-  - orthogonal arrows: 2190-2193
-  - diagonal arrows: 2196-2199
+  - orthogonal arrows `←``↑``→``↓` 2190-2193
+  - diagonal arrows `↖``↗``↘``↙` 2196-2199
 
 # License
 
