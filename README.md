@@ -28,6 +28,12 @@ Then, add the following classes to the element:
 * `.before` or `.after` (positioning relative to the element)
 * `.up`, `.down`, `.left`, `.right`, or any combination of either axis
 
+## A Note on Block-level Elements
+
+Block-level elements (`<h1>`—`<h6>`, `<div>`, `<article>`, `<p>`, `<footer>` etc.) default to stretching to the entire available width. Positioning arrows for these elements may yield unexpected and undesired results, such as the arrow resting on the opposite side of the containing element.
+
+You can use the provided classes `.arrow.element.compressed` to see target elements shrink without losing full-width sizing, or `.arrow.element.extended` to give the element full-width sizing and add the `.after` arrow beyond the end of the target element. See [demo](https://hyperseeker.github.io/arrows/) for visual explanation.
+
 ## Examples
 
 * `<a class="arrow after right" href="https://example.com">Visit my wonderful site</a>`
