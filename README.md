@@ -67,10 +67,13 @@ Then, add the following classes to the element:
   
 - [ ] padding is imperfect for text  
   *prevents about one character's worth of selection*
-- [ ] no default location  
-  *have to declare either* `.before` *or* `.after` *explicitly*
-- [ ] all arrows use `:before` pseudo-element, regardless of positioning  
-  *can declare one arrow per element only*
+- [x] ~~no default location~~  
+  ~~*have to declare either* `.before` *or* `.after` *explicitly*~~
+- [x] ~~all arrows use `:before` pseudo-element, regardless of positioning~~  
+  ~~*can declare one arrow per element only*~~
+- [ ] default to left-hand side for LTR layouts  
+  *currently impossible without JS*  
+  `:dir()` *CSS selector is barely-supported*
 
 # Notes
 
