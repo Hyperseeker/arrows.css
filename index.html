@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Arrows Demo</title>
+	
+	<link rel="stylesheet" href="arrows.css">
+	<style>
+		
+		body {
+			
+			min-height: 100vh;
+			max-width: 75ch;
+			
+			margin: 0 auto;
+			
+			font-family: "Inter", sans-serif;
+			font-size: 1.25em;
+			
+		}
+		
+		p { display: table; }
+		
+		h1 { font-size: 2.5em; }
+		h2 { font-size: 2em; }
+		
+		h1,
+		h2 {
+			
+			margin: 1em 0 0.75em 0;
+			
+			text-indent: -0.1ch;
+		
+		}
+		
+		article { 
+			
+			display: flex;
+			flex-wrap: wrap;
+		
+		}
+		
+		article + article { margin-top: 2em; }
+		
+		article h1 { flex-basis: 100%; }
+		
+		article section { flex: 1 0 33%; }
+		
+		
+	</style>
+	
+</head>
+<body>
+	
+	<article>
+		
+		<h1>Orthogonal Arrows</h1>
+		
+		<section>
+			
+			<h2>Default</h2>
+			
+			<p class="arrow left" >Default Arrow</p>
+			<p class="arrow up"   >Default Arrow</p>
+			<p class="arrow right">Default Arrow</p>
+			<p class="arrow down" >Default Arrow</p>
+			
+		</section>
+		
+		<section>
+			
+			<h2>Before</h2>
+			
+			<p class="arrow before left" >Before Arrow</p>
+			<p class="arrow before up"   >Before Arrow</p>
+			<p class="arrow before right">Before Arrow</p>
+			<p class="arrow before down" >Before Arrow</p>
+			
+		</section>
+		
+		<section>
+			
+			<h2>After</h2>
+			
+			<p class="arrow after left" >After Arrow</p>
+			<p class="arrow after up"   >After Arrow</p>
+			<p class="arrow after right">After Arrow</p>
+			<p class="arrow after down" >After Arrow</p>
+			
+		</section>
+		
+	</article>
+	
+	<article>
+		
+		<h1>Diagonal Arrows</h1>
+		
+		<section>
+			
+			<h2>Default</h2>
+			
+			<p class="arrow up   left" >Default Arrow</p>
+			<p class="arrow up   right">Default Arrow</p>
+			<p class="arrow down left" >Default Arrow</p>
+			<p class="arrow down right">Default Arrow</p>
+			
+		</section>
+		
+		<section>
+			
+			<h2>Before</h2>
+			
+			<p class="arrow before up   left" >Before Arrow</p>
+			<p class="arrow before up   right">Before Arrow</p>
+			<p class="arrow before down left" >Before Arrow</p>
+			<p class="arrow before down right">Before Arrow</p>
+			
+		</section>
+		
+		<section>
+			
+			<h2>After</h2>
+			
+			<p class="arrow after up   left" >After Arrow</p>
+			<p class="arrow after up   right">After Arrow</p>
+			<p class="arrow after down left" >After Arrow</p>
+			<p class="arrow after down right">After Arrow</p>
+			
+		</section>
+		
+	</article>
+	
+	<article>
+		
+		<h1>Two Arrows @ Once</h1>
+		
+		<section>
+			
+			<h2>Double</h2>
+			
+			<p class="arrow before after left" >Double Arrow</p>
+			<p class="arrow before after up"   >Double Arrow</p>
+			<p class="arrow before after right">Double Arrow</p>
+			<p class="arrow before after down" >Double Arrow</p>
+			
+		</section>
+		
+	</article>
+	
+</body>
+</html>
