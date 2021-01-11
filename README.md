@@ -91,8 +91,8 @@ You can use the provided classes `.arrow.element.compressed` to see target eleme
 # Notes
 
 * Unicode ranges:
-  - orthogonal arrows `←``↑``→``↓` 2190-2193
-  - diagonal arrows `↖``↗``↘``↙` 2196-2199
+  - orthogonal arrows `←` `↑` `→` `↓` 2190-2193
+  - diagonal arrows `↖` `↗` `↘` `↙` 2196-2199
 
 # License
 
