@@ -11,8 +11,8 @@
 	
 	&::before {
 
-		--translate-x:              0;
-		--translate-y:              0;
+		--translate-x:             0;
+		--translate-y:             0;
 		
 		--offset-reduction:        0.375;
 		
@@ -22,11 +22,11 @@
 		--offset-positive-reduced: calc(var(--offset-positive) * var(--offset-reduction));
 		--offset-negative-reduced: calc(var(--offset-negative) * var(--offset-reduction));
 	
-		position:   absolute;
+		position:                  absolute;
 	
-		transform:  translate(var(--translate-x), var(--translate-y));
+		transform:                 translate(var(--translate-x), var(--translate-y));
 	
-		transition: 0.175s transform;
+		transition:                0.175s transform;
 		
 	}
 	
