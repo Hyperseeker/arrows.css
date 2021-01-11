@@ -46,7 +46,8 @@ You can use the provided classes `.arrow.element.compressed` to see target eleme
   *no SVG, image, or JS overhead*
 * works for eight directions  
   *North + East + South + West + NE / NW / SE / SW*
-* can be positioned before or after the element
+* can be positioned before or after the element  
+  *defaults to after the element if no positioning is declared via classes*
 * animated in direction of the arrow on `:hover` and `:focus` by default
 * diagonal arrows animation movement is adjusted  
   *no overmovement compared to orthogonal arrows*
