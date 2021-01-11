@@ -9,7 +9,9 @@
 
 	}
 	
-	&::before {
+	&:not(.before)::after,
+	&.before::before,
+	&.after::after {
 
 		--translate-x:             0;
 		--translate-y:             0;
@@ -32,134 +34,315 @@
 	
 	&.static::before { transform: none; }
 	
-	&.up {
-		
-		&::before { content: "\2191"; }
-		
-		&:hover,
-		&:focus {
-			
-			&::before {
-				
-				--translate-y: var(--offset-arrow-neg-reduced);
-				
-				margin-bottom:  var(--offset-arrow-neg-reduced);
-				padding-bottom: var(--offset-arrow-pos-reduced);
-			
-			} 
-			
-		}
-		
-		&.left {
-			
-			&::before { content: "\2196"; }
-			
-		}
-		
-		&.right {
-			
-			&::before { content: "\2197"; }
-			
-		}
-	
-	}
-	
-	&.down {
-		
-		&::before { content: "\2193"; }
-		
-		&:hover,
-		&:focus {
-			
-			&::before {
-				
-				--translate-y: var(--offset-arrow-pos-reduced);
-				
-				margin-top:  var(--offset-arrow-neg-reduced);
-				padding-top: var(--offset-arrow-pos-reduced);
-			
-			}
-			
-		}		
-		
-		&.left {
-			
-			&::before { content: "\2199"; }
-			
-		}
-		
-		&.right {
-			
-			&::before { content: "\2198"; }
-			
-		}
-	
-	}
-	
-	&.left {
-		
-		&::before { content: "\2190"; }
-		
-		&:hover,
-		&:focus {
-			
-			&::before { --translate-x: var(--offset-arrow-neg-reduced); }
-			
-		}
-		
-	}
-	
-	&.right {
-		
-		&::before { content: "\2192"; }
-		
-		&:hover,
-		&:focus {
-			
-			&::before { --translate-x: var(--offset-arrow-pos-reduced); }
-			
-		}
-		
-	}
-	
-	&.after {
-		
-		&::before {
-	
-			right:         var(--offset-arrow-neg);
-		
-			padding-left:  var(--offset-arrow-pos);
-		
-		}
-		
-	}
-	
 	&.before {
 		
 		&::before {
 	
-			left:          var(--offset-arrow-neg);
+			left:          var(--offset-negative);
 		
-			padding-right: var(--offset-arrow-pos);
+			padding-right: var(--offset-positive);
 		
 		}
 		
+		&.up {
+		
+			&::before { content: "\2191"; }
+			
+			&:hover,
+			&:focus {
+				
+				&::before {
+					
+					--translate-y:  var(--offset-negative-reduced);
+					
+					margin-bottom:  var(--offset-negative-reduced);
+					padding-bottom: var(--offset-positive-reduced);
+				
+				} 
+				
+			}
+			
+			&.left {
+				
+				&::before { content: "\2196"; }
+				
+			}
+			
+			&.right {
+				
+				&::before { content: "\2197"; }
+				
+				&:hover,
+				&:focus {
+					
+					&::before {
+						
+						margin-left:  var(--offset-negative-reduced);
+						padding-left: var(--offset-positive-reduced);
+					
+					}
+					
+				}
+				
+			}
+		
+		}
+		
+		&.down {
+			
+			&::before { content: "\2193"; }
+			
+			&:hover,
+			&:focus {
+				
+				&::before {
+					
+					--translate-y: var(--offset-positive-reduced);
+					
+					margin-top:    var(--offset-negative-reduced);
+					padding-top:   var(--offset-positive-reduced);
+				
+				}
+				
+			}		
+			
+			&.left {
+				
+				&::before { content: "\2199"; }
+				
+				&:hover,
+				&:focus {
+					
+					&::before {
+						
+						margin-right:  var(--offset-negative-reduced);
+					
+					}
+					
+				}
+				
+			}
+			
+			&.right {
+				
+				&::before { content: "\2198"; }
+				
+				&:hover,
+				&:focus {
+					
+					&::before {
+						
+						margin-right:  var(--offset-negative-reduced);
+						padding-right: var(--offset-positive-reduced);
+					
+					}
+					
+				}
+				
+			}
+		
+		}
+		
+		&.left {
+			
+			&::before { content: "\2190"; }
+			
+			&:hover,
+			&:focus {
+				
+				&::before { --translate-x: var(--offset-negative-reduced); }
+				
+			}
+			
+		}
+		
+		&.right {
+			
+			&::before { content: "\2192"; }
+			
+			&:hover,
+			&:focus {
+				
+				&::before { 
+					
+					--translate-x: var(--offset-positive-reduced);
+					
+					margin-left:  var(--offset-negative-reduced);
+					padding-left: var(--offset-positive-reduced);
+				
+				}
+				
+			}
+			
+		}
+		
 	}
+	
+	&:not(.before),
+	&.after {
+		
+		&::after {
+		
+			right:         var(--offset-negative);
+		
+			padding-left:  var(--offset-positive);
+		
+		}
+		
+		&.up {
+		
+			&::after { content: "\2191"; }
+			
+			&:hover,
+			&:focus {
+				
+				&::after {
+					
+					--translate-y: var(--offset-negative-reduced);
+					
+					margin-bottom:  var(--offset-negative-reduced);
+					padding-bottom: var(--offset-positive-reduced);
+				
+				} 
+				
+			}
+			
+			&.left {
+				
+				&::after { content: "\2196"; }
+			
+				&:hover,
+				&:focus {
+					
+					&::after {
+						
+						--translate-y: var(--offset-negative-reduced);
+						
+						margin-right:  var(--offset-negative-reduced);
+						padding-right: var(--offset-positive-reduced);
+					
+					} 
+					
+				}
+				
+			}
+			
+			&.right {
+				
+				&::after { content: "\2197"; }
+				
+			}
+		
+		}
+		
+		&.down {
+			
+			&::after { content: "\2193"; }
+			
+			&:hover,
+			&:focus {
+				
+				&::after {
+					
+					--translate-y: var(--offset-positive-reduced);
+					
+					margin-top:  var(--offset-negative-reduced);
+					padding-top: var(--offset-positive-reduced);
+				
+				}
+				
+			}		
+			
+			&.left {
+				
+				&::after { content: "\2199"; }
+				
+			}
+			
+			&.right {
+				
+				&::after { content: "\2198"; }
+				
+			}
+		
+		}
+		
+		&.left {
+			
+			&::after { content: "\2190"; }
+			
+			&:hover,
+			&:focus {
+				
+				&::after { 
+					
+					--translate-x: var(--offset-negative-reduced);
+					
+					margin-right:  var(--offset-negative-reduced);
+					padding-right: var(--offset-positive-reduced);
+				
+				}
+				
+			}
+			
+		}
+		
+		&.right {
+			
+			&::after { content: "\2192"; }
+			
+			&:hover,
+			&:focus {
+				
+				&::after { --translate-x: var(--offset-positive-reduced); }
+				
+			}
+			
+		}
+		
+	}
+	
 	
 	/*  >>>> Diagonal Arrows Animation  */
 	/*     * reduce movement distance for diagonal arrows */
 	/*     * vertical + horizontal movement compound and create an effect of stronger animation */
 	
-	&.up,
-	&.down {
+	&.before {
 		
-		&.left,
-		&.right {
+		&.up,
+		&.down {
 			
-			&:hover,
-			&:focus {
+			&.left,
+			&.right {
 				
-				&::before { --offset-arrow-reduction: 0.25; }
+				&:hover,
+				&:focus {
+					
+					&::before { --offset-reduction: 0.25; }
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	&:not(.before),
+	&.after {
+		
+		&.up,
+		&.down {
+			
+			&.left,
+			&.right {
+				
+				&:hover,
+				&:focus {
+					
+					&::after { --offset-reduction: 0.25; }
+					
+				}
 				
 			}
 			
