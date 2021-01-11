@@ -6,7 +6,7 @@
 
 You can see the library in action on
 
-* [the demo page](https://hyperseeker.github.io/arrows/)
+* [the demo page](https://hyperseeker.github.io/arrows.css/)
 * [my website](https://hyperseeker.stream/)²
 * [CSS Scripts](https://www.cssscript.com/animated-directional-arrows/)
 
