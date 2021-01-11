@@ -4,7 +4,13 @@
 
 ¹ excluding `<iframe>`, `<video>`, `<embed>`, and `<img>`; potentially excluding `<option>`, `<audio>`, `<canvas>`, `<object>`, and `<applet>`; see [MDN on replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element) for details
 
-You can see the library in action on [my website](https://hyperseeker.stream/). Note that list arrows is a distinct class of features and is not featured in this library.
+You can see the library in action on
+
+* [the demo page](https://hyperseeker.github.io/arrows/)
+* [my website](https://hyperseeker.stream/)²
+* [CSS Scripts](https://www.cssscript.com/animated-directional-arrows/)
+
+² note that list arrows on my personal site is a distinct class of features and is not featured in this library
 
 # Reasoning
 
