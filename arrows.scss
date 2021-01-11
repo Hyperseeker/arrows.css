@@ -1,6 +1,13 @@
 .arrow {
 	
 	position: relative;
+
+	&.element {
+
+		&.compressed { display: table; }
+		&.extended   { display: block; }
+
+	}
 	
 	&::before {
 
