@@ -32,7 +32,9 @@
 		
 	}
 	
-	&.static::before { transform: none; }
+	&:not(.before).static::after,
+	&.before.static::before,
+	&.after.static::after { transform: none; }
 	
 	&.before {
 		
